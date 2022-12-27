@@ -1,0 +1,21 @@
+.footer {
+    background: #000;
+    padding: 50px 0;
+
+    p {
+        padding-bottom: 10px;
+    }
+
+    a {
+        font-size: 22px;
+        font-family: 'nunito';
+
+        transition: all 0.2s;
+        color: #fff;
+
+        &:hover {
+            margin-left: 5px;
+            color: #f66b1d;
+        }
+    }
+}

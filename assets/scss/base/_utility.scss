@@ -1,0 +1,20 @@
+.btn-submit {
+   background: #f66b1d;
+   font-family: "codec-pro";
+   font-size: 20px;
+   color: #fff;
+   padding: 15px 25px;
+   border: none;
+   max-width: 160px;
+}
+
+
+.big-heading {
+   font-size: 80px;
+   font-weight: bold;
+   padding-bottom: 50px;
+
+   @media(max-width: 1399px) {
+      font-size: 60px;
+   }
+}

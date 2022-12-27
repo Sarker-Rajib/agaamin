@@ -1,0 +1,29 @@
+.own-things {
+    background: #e2efff;
+    padding: 150px 0;
+
+    .big-heading {
+        font-family: "codec-pro";
+    }
+
+    p {
+        font-family: "codec-pro";
+        font-size: 24px;
+    }
+
+    ul {
+
+        li {
+            list-style: disc;
+            font-size: 22px;
+        }
+    }
+
+    .desk-image {
+        margin-top: -80px;
+    }
+
+    .btn-submit {
+        margin-top: 50px;
+    }
+}

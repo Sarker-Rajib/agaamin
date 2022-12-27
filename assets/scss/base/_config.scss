@@ -1,0 +1,10 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $color-black;
+}
+
+.container{
+  @media(min-width: 1400px){
+    max-width: 1460px;
+  }
+}

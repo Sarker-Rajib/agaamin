@@ -1,0 +1,29 @@
+.name-multiple-use {
+    background: #f76b1e;
+    padding: 150px 0 100px;
+    color: #fff;
+
+    .img-wrapper {
+        min-height: 120px;
+        display: flex;
+        align-items: end;
+        padding-bottom: 20px;
+    }
+
+    .big-heading {
+        font-family: "codec-pro";
+        font-family: 'helios';
+    }
+
+    h4 {
+        font-family: 'helios';
+        font-size: 26px;
+    }
+
+    p {
+        color: #6c1800;
+        font-family: 'tt-common';
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+}
