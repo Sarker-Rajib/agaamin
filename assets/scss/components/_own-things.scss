@@ -2,8 +2,16 @@
     background: #e2efff;
     padding: 150px 0;
 
+    @media(max-width: 767px) {
+        padding: 50px 0;
+    }
+
     .big-heading {
         font-family: "codec-pro";
+
+        @media(max-width: 767px) {
+            font-size: 35px;
+        }
     }
 
     p {
@@ -21,6 +29,10 @@
 
     .desk-image {
         margin-top: -80px;
+
+        @media(max-width: 767px) {
+            margin-top: 0;
+        }
     }
 
     .btn-submit {

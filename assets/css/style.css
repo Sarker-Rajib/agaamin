@@ -77,6 +77,12 @@ body {
     font-size: 60px;
   }
 }
+@media (max-width: 767px) {
+  .big-heading {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}
 
 /*===// end of base css === */
 /*=== layouts css start === */
@@ -99,6 +105,11 @@ body {
     padding: 120px 0;
   }
 }
+@media (max-width: 767px) {
+  .banner {
+    padding: 50px 0;
+  }
+}
 .banner .big-heading {
   color: #02459c;
   font-family: "codec-pro";
@@ -113,6 +124,11 @@ body {
     font-size: 20px;
   }
 }
+@media (max-width: 767px) {
+  .banner .sub-line {
+    font-size: 18px;
+  }
+}
 .banner .input-group .text-input {
   border-radius: 0;
   border: none;
@@ -125,6 +141,11 @@ body {
 .banner .input-group .input-group-2 select {
   padding: 15px;
   font-size: 24px;
+}
+@media (max-width: 767px) {
+  .banner .input-group .input-group-2 select {
+    padding: 15px 0;
+  }
 }
 .banner .Question {
   position: absolute;
@@ -169,6 +190,11 @@ body {
   margin-left: 5px;
   color: #f66b1d;
 }
+@media (min-width: 1200px) {
+  .footer .c-border {
+    border-right: 3px solid #0347a8;
+  }
+}
 
 /*===// end of layouts css === */
 /*=== components css start === */
@@ -176,6 +202,11 @@ body {
   background: #f76b1e;
   padding: 150px 0 100px;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .name-multiple-use {
+    padding: 50px 0;
+  }
 }
 .name-multiple-use .img-wrapper {
   min-height: 120px;
@@ -191,10 +222,15 @@ body {
   font-family: "helios";
   font-size: 26px;
 }
+@media (max-width: 767px) {
+  .name-multiple-use h4 {
+    font-size: 24px;
+  }
+}
 .name-multiple-use p {
   color: #6c1800;
   font-family: "tt-common";
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 50px;
 }
 
@@ -202,8 +238,18 @@ body {
   background: #e2efff;
   padding: 150px 0;
 }
+@media (max-width: 767px) {
+  .own-things {
+    padding: 50px 0;
+  }
+}
 .own-things .big-heading {
   font-family: "codec-pro";
+}
+@media (max-width: 767px) {
+  .own-things .big-heading {
+    font-size: 35px;
+  }
 }
 .own-things p {
   font-family: "codec-pro";
@@ -216,6 +262,11 @@ body {
 .own-things .desk-image {
   margin-top: -80px;
 }
+@media (max-width: 767px) {
+  .own-things .desk-image {
+    margin-top: 0;
+  }
+}
 .own-things .btn-submit {
   margin-top: 50px;
 }
@@ -226,10 +277,20 @@ body {
   border-top: 30px solid #f46c22;
   border-bottom: 30px solid #f46c22;
 }
+@media (max-width: 767px) {
+  .youtube-carousel {
+    padding: 50px 0;
+  }
+}
 .youtube-carousel .left .swiper {
   width: 100%;
   height: 100%;
   padding-bottom: 160px;
+}
+@media (max-width: 767px) {
+  .youtube-carousel .left .swiper {
+    padding-bottom: 80px;
+  }
 }
 .youtube-carousel .left .swiper .swiper-slide {
   text-align: center;
@@ -329,12 +390,22 @@ body {
   padding: 150px 0;
   background: #e2efff;
 }
+@media (max-width: 767px) {
+  .rates {
+    padding: 50px 0;
+  }
+}
 .rates h3 {
   color: #0553c2;
   font-family: "codec-pro";
   font-weight: bold;
   font-size: 50px;
   padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .rates h3 {
+    font-size: 35px;
+  }
 }
 .rates .rate-card {
   text-align: center;
@@ -376,11 +447,21 @@ body {
 }
 
 .support {
-  padding-top: 150px;
+  padding-top: 100px;
   background: #e2efff;
+}
+@media (max-width: 767px) {
+  .support {
+    padding-top: 50px;
+  }
 }
 .support .image {
   position: relative;
+}
+@media (max-width: 991px) {
+  .support .image {
+    padding-bottom: 40px;
+  }
 }
 .support .image .q-image {
   margin-bottom: -45px;
@@ -391,6 +472,12 @@ body {
   left: 170px;
   -webkit-animation: move 3s infinite linear;
           animation: move 3s infinite linear;
+}
+@media (max-width: 767px) {
+  .support .image .bulb {
+    left: 90px;
+    max-width: 40px;
+  }
 }
 @-webkit-keyframes move {
   0% {
@@ -466,6 +553,11 @@ body {
   padding-bottom: 30px;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .support .text h2 {
+    font-size: 30px;
+  }
+}
 .support .text span {
   background: #f66b1d;
   font-family: "helios";
@@ -473,6 +565,11 @@ body {
   padding: 30px;
   font-size: 24px;
   display: inline-block;
+}
+@media (max-width: 767px) {
+  .support .text span {
+    padding: 15px;
+  }
 }
 .support .black {
   background: #000;

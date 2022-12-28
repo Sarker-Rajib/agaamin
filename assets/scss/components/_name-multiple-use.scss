@@ -3,6 +3,10 @@
     padding: 150px 0 100px;
     color: #fff;
 
+    @media(max-width: 767px) {
+        padding: 50px 0;
+    }
+
     .img-wrapper {
         min-height: 120px;
         display: flex;
@@ -18,12 +22,16 @@
     h4 {
         font-family: 'helios';
         font-size: 26px;
+
+        @media(max-width: 767px) {
+            font-size: 24px;
+        }
     }
 
     p {
         color: #6c1800;
         font-family: 'tt-common';
-        font-size: 16px;
+        font-size: 20px;
         padding-bottom: 50px;
     }
 }
