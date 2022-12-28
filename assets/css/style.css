@@ -84,6 +84,27 @@ body {
   }
 }
 
+.chat-button {
+  display: flex;
+  align-items: baseline;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0347a8;
+  color: #fff;
+  font-family: "codec-pro";
+  font-size: 24px;
+  padding: 5px 18px;
+  border: none;
+  border-radius: 35px;
+  z-index: 999;
+}
+.chat-button i {
+  transform: scaleX(-1);
+  font-size: 30px;
+  margin: 5px;
+}
+
 /*===// end of base css === */
 /*=== layouts css start === */
 .header {
@@ -98,7 +119,12 @@ body {
 
 .banner {
   background: #e2efff;
-  padding: 150px 0;
+  padding: 100px 0;
+}
+@media (min-width: 1200px) {
+  .banner .container {
+    padding: 0 100px;
+  }
 }
 @media (max-width: 1399px) {
   .banner {
@@ -200,7 +226,7 @@ body {
 /*=== components css start === */
 .name-multiple-use {
   background: #f76b1e;
-  padding: 150px 0 100px;
+  padding: 100px 0 50px;
   color: #fff;
 }
 @media (max-width: 767px) {
@@ -236,15 +262,23 @@ body {
 
 .own-things {
   background: #e2efff;
-  padding: 150px 0;
+  padding: 50px 0;
 }
 @media (max-width: 767px) {
   .own-things {
     padding: 50px 0;
   }
 }
+@media (min-width: 1200px) {
+  .own-things .container {
+    padding: 0 100px;
+  }
+}
 .own-things .big-heading {
   font-family: "codec-pro";
+  color: #02459c;
+  font-size: 70px;
+  line-height: 1;
 }
 @media (max-width: 767px) {
   .own-things .big-heading {
@@ -261,6 +295,12 @@ body {
 }
 .own-things .desk-image {
   margin-top: -80px;
+  max-height: 450px;
+}
+@media (max-width: 1399px) {
+  .own-things .desk-image {
+    margin-top: -45px;
+  }
 }
 @media (max-width: 767px) {
   .own-things .desk-image {
@@ -273,14 +313,18 @@ body {
 
 .youtube-carousel {
   overflow: hidden;
-  padding: 150px 0 0px;
-  border-top: 30px solid #f46c22;
-  border-bottom: 30px solid #f46c22;
+  padding: 80px 0 0px;
+  border-top: 15px solid #f46c22;
+  border-bottom: 15px solid #f46c22;
 }
 @media (max-width: 767px) {
   .youtube-carousel {
     padding: 50px 0;
   }
+}
+.youtube-carousel .big-heading {
+  color: #02459c;
+  font-family: "codec-pro";
 }
 .youtube-carousel .left .swiper {
   width: 100%;
@@ -387,7 +431,7 @@ body {
 }
 
 .rates {
-  padding: 150px 0;
+  padding: 100px 0;
   background: #e2efff;
 }
 @media (max-width: 767px) {
@@ -413,15 +457,15 @@ body {
   background: #fff;
   color: #f66b1d;
   padding: 20px;
+  height: 100%;
 }
 .rates .rate-card p {
   font-family: "nunito-bold";
-  font-size: 28px;
+  font-size: 45px;
   padding-bottom: 20px;
 }
 .rates .rate-card .local {
   font-family: "nunito";
-  font-size: 28px;
   padding-bottom: 20px;
 }
 .rates .rate-card .value {
@@ -447,7 +491,7 @@ body {
 }
 
 .support {
-  padding-top: 100px;
+  padding-top: 20px;
   background: #e2efff;
 }
 @media (max-width: 767px) {
@@ -470,8 +514,6 @@ body {
   position: absolute;
   top: 0;
   left: 170px;
-  -webkit-animation: move 3s infinite linear;
-          animation: move 3s infinite linear;
 }
 @media (max-width: 767px) {
   .support .image .bulb {
@@ -479,68 +521,34 @@ body {
     max-width: 40px;
   }
 }
-@-webkit-keyframes move {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(20deg);
-  }
-  20% {
-    transform: rotate(45deg);
-  }
-  30% {
-    transform: rotate(20deg);
-  }
-  40% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-20deg);
-  }
-  60% {
-    transform: rotate(-45deg);
-  }
-  70% {
-    transform: rotate(-30deg);
-  }
-  80% {
-    transform: rotate(-20deg);
-  }
-  100% {
-    transform: rotate(0deg);
+.support .image .bulb .st {
+  position: absolute;
+  left: 13px;
+  bottom: 0px;
+  -webkit-animation: rotate 3s infinite linear;
+          animation: rotate 3s infinite linear;
+}
+@media (max-width: 767px) {
+  .support .image .bulb .st {
+    left: 8px;
+    max-width: 26px;
+    bottom: 5px;
   }
 }
-@keyframes move {
+@-webkit-keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
-  10% {
-    transform: rotate(20deg);
+  100% {
+    transform: rotate(360deg);
   }
-  20% {
-    transform: rotate(45deg);
-  }
-  30% {
-    transform: rotate(20deg);
-  }
-  40% {
+}
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-20deg);
-  }
-  60% {
-    transform: rotate(-45deg);
-  }
-  70% {
-    transform: rotate(-30deg);
-  }
-  80% {
-    transform: rotate(-20deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 .support .text {

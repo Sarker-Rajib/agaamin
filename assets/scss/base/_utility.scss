@@ -23,3 +23,26 @@
       padding-bottom: 20px;
    }
 }
+
+.chat-button {
+   display: flex;
+   align-items: baseline;
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   background: #0347a8;
+   color: #fff;
+   font-family: "codec-pro";
+   font-size: 24px;
+   padding: 5px 18px;
+   border: none;
+   border-radius: 35px;
+   z-index: 999;
+
+   i {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      font-size: 30px;
+      margin: 5px;
+   }
+}

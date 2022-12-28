@@ -1,13 +1,22 @@
 .own-things {
     background: #e2efff;
-    padding: 150px 0;
+    padding: 50px 0;
 
     @media(max-width: 767px) {
         padding: 50px 0;
     }
 
+    @media(min-width: 1200px) {
+        .container {
+            padding: 0 100px;
+        }
+    }
+
     .big-heading {
         font-family: "codec-pro";
+        color: #02459c;
+        font-size: 70px;
+        line-height: 1;
 
         @media(max-width: 767px) {
             font-size: 35px;
@@ -29,6 +38,11 @@
 
     .desk-image {
         margin-top: -80px;
+        max-height: 450px;
+
+        @media(max-width: 1399px) {
+            margin-top: -45px;
+        }
 
         @media(max-width: 767px) {
             margin-top: 0;

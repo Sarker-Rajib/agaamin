@@ -1,5 +1,5 @@
 .support {
-    padding-top: 100px;
+    padding-top: 20px;
     background: #e2efff;
 
     @media(max-width: 767px) {
@@ -21,53 +21,33 @@
             position: absolute;
             top: 0;
             left: 170px;
-            animation: move 3s infinite linear;
 
             @media(max-width: 767px) {
                 left: 90px;
                 max-width: 40px;
             }
+
+            .st {
+                position: absolute;
+                left: 13px;
+                bottom: 0px;
+                animation: rotate 3s infinite linear;
+
+                @media(max-width: 767px) {
+                    left: 8px;
+                    max-width: 26px;
+                    bottom: 5px;
+                }
+            }
         }
 
-        @keyframes move {
+        @keyframes rotate {
             0% {
                 transform: rotate(0deg);
             }
 
-            10% {
-                transform: rotate(20deg);
-            }
-
-            20% {
-                transform: rotate(45deg);
-            }
-
-            30% {
-                transform: rotate(20deg);
-            }
-
-            40% {
-                transform: rotate(0deg);
-            }
-
-            50% {
-                transform: rotate(-20deg);
-            }
-
-            60% {
-                transform: rotate(-45deg);
-            }
-
-            70% {
-                transform: rotate(-30deg);
-            }
-
-            80% {
-                transform: rotate(-20deg);
-            }
-
             100% {
-                transform: rotate(0deg);
+                transform: rotate(360deg);
             }
         }
     }

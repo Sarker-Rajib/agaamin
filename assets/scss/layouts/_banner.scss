@@ -1,6 +1,12 @@
 .banner {
     background: #e2efff;
-    padding: 150px 0;
+    padding: 100px 0;
+
+    @media(min-width: 1200px) {
+        .container {
+            padding: 0 100px;
+        }
+    }
 
     @media(max-width: 1399px) {
         padding: 120px 0;
