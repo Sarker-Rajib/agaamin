@@ -277,7 +277,7 @@ body {
 .own-things .big-heading {
   font-family: "codec-pro";
   color: #02459c;
-  font-size: 70px;
+  font-size: 63px;
   line-height: 1;
 }
 @media (max-width: 767px) {
@@ -294,7 +294,7 @@ body {
   font-size: 22px;
 }
 .own-things .desk-image {
-  margin-top: -80px;
+  margin-top: -60px;
   max-height: 450px;
 }
 @media (max-width: 1399px) {
